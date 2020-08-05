@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        BeatStage Volume Controller
-// @namespace   https://hyrious.me
+// @namespace   https://hyrious.me/BeatStage-Volume-Controller
 // @match       https://www.beatstage.com/play/*
 // @grant       GM_setValue
 // @grant       GM_getValue
