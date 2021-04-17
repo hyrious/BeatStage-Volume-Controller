@@ -51,6 +51,13 @@
     uiinput.addEventListener("input", refresh);
 
     uiholder.append(uitext, uiinput);
-    refresh();
+    
+    const once = () => {
+      document.body.removeEventListener('click', once);
+      setTimeout(() => {
+        refresh();
+      }, 200);
+    };
+    document.body.addEventListener('click', once);
   });
 })();
