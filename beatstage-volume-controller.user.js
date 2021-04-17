@@ -9,7 +9,7 @@
 // @description BeatStage 的默认音量太吵啦
 // @homepageURL https://github.com/hyrious/BeatStage-Volume-Controller
 // @supportURL  https://github.com/hyrious/BeatStage-Volume-Controller/issues
-// @downloadURL https://ghcdn.rawgit.org/hyrious/BeatStage-Volume-Controller/master/beatstage-volume-controller.user.js
+// @downloadURL https://cdn.jsdelivr.net/gh/hyrious/BeatStage-Volume-Controller@master/beatstage-volume-controller.user.js
 // ==/UserScript==
 (function () {
   function runBlockIf(condition, block) {
@@ -54,9 +54,7 @@
     
     const once = () => {
       document.body.removeEventListener('click', once);
-      setTimeout(() => {
-        refresh();
-      }, 200);
+      setTimeout(refresh, 200);
     };
     document.body.addEventListener('click', once);
   });
